@@ -16,6 +16,7 @@
 		32B9E2DC291F9EC200E598AD /* LocalizationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B9E2DB291F9EC200E598AD /* LocalizationTests.swift */; };
 		32B9E2E6291F9EC300E598AD /* LocalizationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B9E2E5291F9EC300E598AD /* LocalizationUITests.swift */; };
 		32B9E2E8291F9EC300E598AD /* LocalizationUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B9E2E7291F9EC300E598AD /* LocalizationUITestsLaunchTests.swift */; };
+		32B9E2F7291FA28F00E598AD /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 32B9E2F9291FA28F00E598AD /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,9 @@
 		32B9E2E1291F9EC300E598AD /* LocalizationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LocalizationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		32B9E2E5291F9EC300E598AD /* LocalizationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizationUITests.swift; sourceTree = "<group>"; };
 		32B9E2E7291F9EC300E598AD /* LocalizationUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizationUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		32B9E2F4291FA23A00E598AD /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/Main.strings; sourceTree = "<group>"; };
+		32B9E2F8291FA28F00E598AD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		32B9E2FA291FA2AE00E598AD /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +110,7 @@
 				32B9E2CD291F9EC200E598AD /* Assets.xcassets */,
 				32B9E2CF291F9EC200E598AD /* LaunchScreen.storyboard */,
 				32B9E2D2291F9EC200E598AD /* Info.plist */,
+				32B9E2F9291FA28F00E598AD /* Localizable.strings */,
 			);
 			path = Localization;
 			sourceTree = "<group>";
@@ -213,6 +218,7 @@
 			knownRegions = (
 				en,
 				Base,
+				tr,
 			);
 			mainGroup = 32B9E2B8291F9EC000E598AD;
 			productRefGroup = 32B9E2C2291F9EC000E598AD /* Products */;
@@ -232,6 +238,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				32B9E2D1291F9EC200E598AD /* LaunchScreen.storyboard in Resources */,
+				32B9E2F7291FA28F00E598AD /* Localizable.strings in Resources */,
 				32B9E2CE291F9EC200E598AD /* Assets.xcassets in Resources */,
 				32B9E2CC291F9EC000E598AD /* Main.storyboard in Resources */,
 			);
@@ -301,6 +308,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				32B9E2CB291F9EC000E598AD /* Base */,
+				32B9E2F4291FA23A00E598AD /* tr */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -313,6 +321,15 @@
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
+		32B9E2F9291FA28F00E598AD /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				32B9E2F8291FA28F00E598AD /* en */,
+				32B9E2FA291FA2AE00E598AD /* tr */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -320,6 +337,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -380,6 +398,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -445,6 +464,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -473,6 +493,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
